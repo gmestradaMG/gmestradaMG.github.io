@@ -1,1 +1,0 @@
-# gmestradaMG.github.io
