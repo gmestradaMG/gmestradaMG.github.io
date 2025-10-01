@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>XV Años de Axel Estrada Almaraz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fuentes y animaciones -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --vino: #6b0133;
+      --gris: #2e2e2e;
+      --gris-claro: #f2f2f2;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, var(--gris), var(--vino));
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      color: var(--vino);
+      background: white;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      border-radius: 20px;
+    }
+    header h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: white ;
+      /*background: var(--vino);*/
+     
+      padding: 0.5rem 1.5rem;
+      border-radius: 20px;
+    }
+    .detalles {
+      margin: 2rem auto;
+      max-width: 700px;
+      background: var(--gris-claro);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      color: var(--gris);
+    }
+
+    .detalles h2 {
+      color: var(--vino);
+      margin-bottom: 1rem;
+    }
+
+    .padrinos, .familia {
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+
+    .countdown {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 1.5rem 0;
+      color: var(--gris);
+    }
+
+    footer {
+      margin: 2rem 0;
+    }
+
+    button {
+      background: var(--vino);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #4a0022;
+    }
+
+    #musicBtn {
+      margin-top: 1.2rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    
+    <h2>Mis XV Años</h2>
+
+    <h1>Axel</h1>
+    <p style="margin-top:1rem;">Con la bendición de Dios y el amor de mi familia, quiero invitarte a celebrar conmigo.</p>
+  </header>
+
+  <div class="detalles" data-aos="zoom-in">
+    <h2>📅 25 de Octubre 2025</h2>
+    <div class="countdown" id="countdown">⏳ Cargando cuenta regresiva...</div>
+    <div class="padrinos">🤝 Padrinos:</div>
+    <div class="padrinos"><strong>Irene DonJuan</strong></div>
+    <div class="padrinos"><strong>Elías Reséndiz</strong></div>
+    <div class="familia">👩‍👦 Familia:</div>
+    <div class="familia"><strong>Lucero Estrada Almaraz</strong></div>
+    <div class="familia"><strong>Cristhian Estrada Almaraz</strong></div>
+
+    <h2>Misa</h2>
+    <p><strong>5:00 PM</strong> – Parroquia San Pedro y San Pablo</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984.7838982853139!2d-99.81533624129008!3d20.69424578380418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3838d2b0d07cd%3A0xd12a1acfd59d75e4!2sParroquia%20de%20San%20Pedro%20y%20San%20Pablo!5e0!3m2!1ses-419!2smx!4v1759180563808!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h2>🎊 Recepción</h2>
+    <p><strong>Finca Don Gil</strong></p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984.8072111861296!2d-99.81149204184878!3d20.690654867704183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d38500356ab68d%3A0x4255b453c3efaffd!2sQuinta%20Don%20Gil!5e0!3m2!1ses-419!2smx!4v1759182188733!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <button onclick="confirmarAsistencia()">Confirmar asistencia</button>
+
+    <button id="musicBtn">🔊 Activar música</button>
+  </div>
+
+  <footer data-aos="fade-up">
+    <a href="https://wa.me/?text=Te%20invito%20a%20los%20XV%20Años%20de%20Axel%20🎉%20%20https://tusitio.com" target="_blank">
+      <button>Compartir por WhatsApp</button>
+    </a>
+    <p style="margin-top:1rem;">Con mucho cariño 💕 ¡Espero verte ahí!</p>
+  </footer>
+
+  <!-- Audio oculto -->
+  <audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_6a0dbe8b78.mp3?filename=smooth-jazz-sax-90s-style-18906.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Librerías -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  
+    function confirmarAsistencia() {
+      const nombre = prompt("¿Cuál es tu nombre para registrar tu asistencia?");
+      const email = prompt("¿Tienes correo electrónico? (Opcional)");
+
+      fetch('TU_WEB_APP_URL?nombre=' + encodeURIComponent(nombre) + '&email=' + encodeURIComponent(email))
+        .then(response => response.text())
+        .then(data => alert(data))
+        .catch(error => alert("Error al registrar asistencia"));
+    }
+
+    // Cuenta regresiva
+    const countDownDate = new Date("Oct 25, 2025 17:00:00").getTime();
+    const countdown = document.getElementById("countdown");
+
+    setInterval(() => {
+      let now = new Date().getTime();
+      let distance = countDownDate - now;
+
+      if (distance < 0) {
+        countdown.innerHTML = "🎉 ¡El gran día ha llegado!";
+        return;
+      }
+
+      let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `⏳ Faltan ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+
+    // Botón música
+    const musicBtn = document.getElementById("musicBtn");
+    const bgMusic = document.getElementById("bgMusic");
+    let playing = false;
+
+    musicBtn.addEventListener("click", () => {
+      if (!playing) {
+        bgMusic.play();
+        playing = true;
+        musicBtn.textContent = "🔇 Desactivar música";
+      } else {
+        bgMusic.pause();
+        playing = false;
+        musicBtn.textContent = "🔊 Activar música";
+      }
+    });
+  </script>
+</body>
+</html>
